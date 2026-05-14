@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+      /* Internal CSS */
+      .subject-badge {
+        background-color: gold;
+        color: darkred;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      /* Universal Selector — sets a base font size for every element on the page */
+* {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Element Selectors — targets HTML elements directly by their tag name */
+body {
+  background-color: lightgray;
+  color: black;
+}
+
+h1 {
+  font-size: 32px;
+  color: darkblue;
+}
+
+p {
+  color: dimgray;
+  font-size: 15px;
+}
+
+/* Class Selectors — targets elements using their class attribute */
+.student-name {
+  font-size: 22px;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.student-grade {
+  color: darkorange;
+  font-weight: bold;
+}
+
+.student-school {
+  color: steelblue;
+}
+
+.student-id {
+  color: gray;
+  font-size: 13px;
+}
+
+.stat-value {
+  color: crimson;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: dimgray;
+  font-size: 13px;
+}
+
+.stat-card {
+  background-color: lightyellow;
+  color: black;
+}
+
+/* ID Selector — targets one unique element using its id attribute */
+#profile-card {
+  background-color: lightcyan;
+  color: black;
+}
+
+/* Group Selector — applies the same style to both h2 and h3 at once */
+h2, h3 {
+  color: purple;
+  font-size: 18px;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>🎓 LearnHub</h1>
+      <p style="color: crimson; font-size: 15px;">Your academic journey, all in one place.</p>
+    </header>
+
+    <div id="profile-card">
+      <h2 class="student-name">Alex Johnson</h2>
+      <p class="student-grade">Grade 9 · Section A</p>
+      <p class="student-school">Greenwood International School</p>
+      <p class="student-id">Student ID: GIS-2024-0091</p>
+    </div>
+
+    <section>
+      <h2>📊 My Stats</h2>
+      <div class="stat-card">
+        <p class="stat-value">96%</p>
+        <p class="stat-label">Attendance</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-value">A+</p>
+        <p class="stat-label">Grade</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-value">#3</p>
+        <p class="stat-label">Class Rank</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>📚 My Subjects</h2>
+      <span class="subject-badge">Mathematics</span>
+      <span class="subject-badge">Science</span>
+      <span class="subject-badge">English</span>
+      <span class="subject-badge">Computer Science</span>
+      <span class="subject-badge">History</span>
+      <span class="subject-badge">Art</span>
+    </section>
+
+    <footer>
+      <h3>✨ Keep learning. Keep growing.</h3>
+    </footer>
+
+  </body>
+</html>
